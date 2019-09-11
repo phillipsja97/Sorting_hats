@@ -84,12 +84,14 @@ const houseGenerator = (event) => {
                 <div class="card-body" id="card-input">
                   <h5 class="card-title">${firstName}</h5>
                   <p class="card-text">${randomHouse.houseName}</p>
-                  <a href="#" id="expel" class="btn btn-primary">Expel</a>
+                  <button id="expel" class="btn btn-primary expel">Expel</button>
                 </div>
         `
     
-      printToDom(domString, "cardName")
-      
+      printToDom(domString, "cardName");
+
+      expelListeners();
+     
 };
 
 
@@ -103,7 +105,23 @@ document.getElementById('enterName').addEventListener('click', function(event) {
 }
 );
 
-// document.addEventListener("click", houseGenerator);
+// const expelButtons = document.getElementsByIdName('expel');
+// console.log(expelButtons);
+
+const expelListeners = () => {
+    let expelButtons = document.getElementsByClassName('expel');
+    console.log(expelButtons)
+    for (let i = 0; i < expelButtons.length; i++) {
+        const currentButton = expelButtons[i]
+        currentButton.addEventListener('click', (event) => {
+            console.log(event);
+            console.log(event.target.parentElement);
+            event.target.parentElement.remove();
+        })
+    }
+ };
+
+//  expelListeners();
 
 
 

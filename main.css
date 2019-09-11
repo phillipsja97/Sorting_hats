@@ -1,5 +1,7 @@
 body {
-    background-color: ghostwhite;
+    background-image: url(https://i1.wp.com/www.studentprintz.com/wp-content/uploads/2019/02/harry-potter-house-hypable-e1550852806751.png?fit=661%2C455);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* .container {
@@ -11,4 +13,28 @@ body {
 
 .row {
     width: 500px;
+}
+
+#enterName {
+    background-color: rgb(231, 220, 220);
+}
+
+/* #cardName {
+    background-color: rgb(231, 220, 220);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: black;
+} */
+
+.card-body {
+    border-style: solid;
+    background-color: rgb(231, 220, 220);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: black;
 }
